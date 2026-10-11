@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightseagreen;
+    text-align: center;
+}
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 1.5vmin;
+}
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25 rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+#new-btn {
+     padding: 1rem;
+    font-size: 1.25 rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+#msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+}
+.msg-container {
+    height: 15vmin;
+}
+.hide {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: 100vh;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .msg-container {
+        order: -2; 
+        height: auto ;
+        display: flex ;
+        flex-direction: column ;
+        align-items: center ;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #msg {
+        color: #ffffc7;
+        font-size: 6vmin;
+        font-weight: bold;
+    }
+
+    #new-btn {
+        width: 80%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    h1, h2, p.title { 
+        order: -1 ;
+        font-size: 8vmin;
+        margin: 0.9rem 0;
+    }
+
+    .container {
+        order: 1 ;
+        height: auto ;
+        margin: 0.5rem 0;
+    }
+
+    .game {
+        height: 70vmin; 
+        width: 70vmin;
+        gap: 2vmin;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 10vmin;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    #reset-btn {
+        order: 2 ;
+        width: 80%;
+        max-width: 250px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .hide {
+    display: none ;
+}
+}
+
